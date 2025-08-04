@@ -115,3 +115,20 @@ docker run --rm -v %cd%:/app python:3 python /app/test.py  # Jika windows
 
 # Latihan: Buat Dockerfile sederhana
 docker build -t farhan/halo:v1 .
+
+# --- Bagian 12 ---
+# Menjalankan layanan (membangun & menjalankan container)
+docker-compose up
+docker-compose up -d
+
+# Menghentikan dan menghapus container
+docker-compose down
+
+# Membangun ulang container
+docker-compose build
+
+# Melihat log container
+docker-compose logs
+
+# Melihat container yang sedang berjalan
+docker-compose ps
